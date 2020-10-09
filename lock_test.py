@@ -1,0 +1,9 @@
+import RPi.GPIO as GPIO
+
+LOCK_PIN = 26
+
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(LOCK_PIN, GPIO.OUT)
+
+GPIO.output(LOCK_PIN, GPIO.HIGH)
+
